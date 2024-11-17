@@ -22,7 +22,7 @@ body {
 
 /* Encabezado (Navbar) */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+    background-color: #cde3ef; /* Fondo translúcido */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
     position:sticky;
     width: 100%;
@@ -42,6 +42,49 @@ body {
     color: #0056b3; /* Color de enlace al hacer hover */
     text-decoration: underline; /* Subrayado sutil */
 }
+/* Estilo para los íconos de redes sociales en la barra de navegación */
+.navbar .social-icons {
+    position: relative; 
+    display: flex;
+    
+    gap: 10px;
+    flex-direction: row;
+    
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: scale(1.2); 
+        transform: rotate(10deg);
+    }
+    75%{
+        transform: scale(1.2);
+        transform: rotate(-10deg);
+
+    }
+    100% {
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+}
+
+.social-icons a{
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    animation: pulse 2s infinite ;
+}
+
+.bi:hover {
+    transform: scale(1.2); /* Escalar el ícono al pasar el mouse */
+    color: #1b0ab6; /* Cambia el color del ícono al pasar el mouse */
+    text-shadow: 0 0 10px rgba(1, 102, 255, 0.7); /* Sombra de texto para un efecto adicional */
+}
+
+
+
 
 .container-hero {
     position: relative;
@@ -116,6 +159,9 @@ body {
 
 .card img {
     border-radius: 0.5rem; /* Bordes redondeados */
+    max-width: 100%; /* Asegúrate de que la imagen no exceda el ancho de la tarjeta */
+    height: 300px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; 
 }
 
 .card-title {
@@ -304,6 +350,14 @@ footer {
 .card-footer {
     background-color: #f1f1f1; /* Fondo claro */
     padding: 10px; /* Espaciado interno */
+}
+/* Estilo del offcanvas */
+
+.inscripcion-cerrada {
+    color: red; /* Color rojo para resaltar */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrado */
+    margin-top: 20px; /* Margen superior */
 }
 
 /* Estilos para los botones de acción en la página de administración */
