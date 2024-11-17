@@ -6,7 +6,7 @@ $db = new Database();
 $conn = $db->getConnection(); // Obtener la conexión a la base de datos
 
 // Obtener cursos para el formulario de inscripción
-$sql = "SELECT id, titulo FROM cursos"; // Consulta para obtener los títulos de los cursos
+$sql = "SELECT id, titulo FROM cursos WHERE inscripciones_cerradas = 0"; // Consulta para obtener los títulos de los cursos
 $result = $conn->query($sql);
 
 // Verificar si la consulta fue exitosa
