@@ -1,15 +1,13 @@
 # Ignorar el archivo de configuración de la base de datos
-./db.php
+db.php
 
 # Ignorar archivos de configuración de entorno
-.env
+env
 
 # Ignorar dependencias
 node_modules/
 vendor/
 
-# Ignorar archivos de log
-*.log
 
 # Ignorar archivos temporales
 temp/

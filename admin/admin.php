@@ -76,6 +76,10 @@ $result = $conn->query($sql);
         </table>
         <a href="agregar_curso.php" class="btn btn-success">Agregar Curso</a>
         <a href="../public/index.php" class="btn btn-success">Ir al inicio</a>
+        <br>
+        <?php
+        include_once './eventos.php';
+        ?>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFecha" aria-labelledby="offcanvasFechaLabel">
             <div class="offcanvas-header">
                 <h5 id="offcanvasFechaLabel">Establecer Fecha de Apertura</h5>
