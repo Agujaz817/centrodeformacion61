@@ -19,7 +19,14 @@ body {
     background-color: #cde3ef; /* Fondo suave */
     color: #152372; /* Color de texto */
 }
-
+#evento {
+    background-color: #e7f3fe;
+    color: #31708f;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 8px solid #152372;
+    border-radius: 30px;
+}
 /* Encabezado (Navbar) */
 .navbar {
     background-color: #cde3ef; /* Fondo translúcido */
@@ -307,7 +314,8 @@ body {
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #343a40; /* Fondo oscuro */
+    margin-top: 100px ;
+    background-color:#152372; /* Fondo oscuro */
     color: white; /* Color de texto */
     text-align: center; /* Texto centrado */
     padding: 20px 0; /* Espaciado */
