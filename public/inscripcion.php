@@ -28,11 +28,12 @@ if ($result->num_rows > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./IMG/lococfp61.png" type="image/x-icon">
     <title>Inscripción a Curso</title>
 </head>
 <body>
-    <div class="container mt-5">
-        <h2>Formulario de Inscripción</h2>
+    <div class="container mt-5 contact-form">
+        <h2>Formulario de Inscripción a Curso</h2>
         <form action="https://formsubmit.co/cformprof61.lacriolla@gmail.com" method="POST">
             <div class="form-group">
                 <label for="nombre">Nombre Completo</label>
@@ -47,10 +48,6 @@ if ($result->num_rows > 0) {
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="mensaje">Mensaje (opcional)</label>
-                <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
-            </div>
-            <div class="form-group">
                 <label for="curso">Curso de Interés</label>
                 <select class="form-control" id="curso" name="curso" required>
                     <option value="">Seleccione un curso</option>
@@ -63,6 +60,11 @@ if ($result->num_rows > 0) {
             </div>
             <button type="submit" class="btn btn-primary">Enviar Inscripción</button>
         </form>
+    </div>
+    <div class="row container text-center">
+        <div class="col-sm text-center" style="margin-top: 20px; align-items:center; left: 30%; top: -10px;">
+            <img src="./IMG/lococfp61.png" alt="" srcset="" class="img-fluid">
+        </div>
     </div>
 </body>
 </html>

@@ -19,13 +19,92 @@ body {
     background-color: #cde3ef; /* Fondo suave */
     color: #152372; /* Color de texto */
 }
-#evento {
-    background-color: #e7f3fe;
-    color: #31708f;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 8px solid #152372;
-    border-radius: 30px;
+.news-section {
+    background-color: #f0f8ff; /* Fondo claro */
+    border: 2px solid #007bff; /* Borde azul */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Margen superior e inferior */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s; /* Transición suave */
+}
+
+.news-section:hover {
+    transform: scale(1.02); /* Efecto de aumentar al pasar el mouse */
+}
+
+.news-title {
+    font-size: 2rem; /* Tamaño de texto grande */
+    color: #152372; /* Color del título */
+    margin-bottom: 10px; /* Espaciado inferior */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+}
+
+.news-description {
+    font-size: 1.2rem; /* Tamaño de texto para la descripción */
+    color: #31708f; /* Color de la descripción */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.news-date {
+    font-size: 1rem; /* Tamaño de texto para la fecha */
+    color: #555; /* Color gris para la fecha */
+}
+
+.date-time {
+    font-weight: bold; /* Negrita para la fecha y hora */
+    color: #007bff; /* Color azul */
+}
+
+.countdown-timer {
+    font-size: 1.5rem; /* Tamaño de texto para el contador */
+    color: #28a745; /* Color verde para el contador */
+    margin-top: 10px; /* Espaciado superior */
+    font-weight: bold; /* Negrita */
+}
+/* Responsividad */
+@media (max-width: 768px) {
+    .news-section {
+        padding: 15px; /* Menos espaciado interno en pantallas pequeñas */
+    }
+
+    .news-title {
+        font-size: 1.5rem; /* Tamaño de texto más pequeño para el título */
+    }
+
+    .news-description {
+        font-size: 1rem; /* Tamaño de texto más pequeño para la descripción */
+    }
+
+    .news-date {
+        font-size: 0.9rem; /* Tamaño de texto más pequeño para la fecha */
+    }
+
+    .countdown-timer {
+        font-size: 1.2rem; /* Tamaño de texto más pequeño para el contador */
+    }
+}
+
+@media (max-width: 576px) {
+    .news-section {
+        padding: 10px; /* Menos espaciado interno en pantallas muy pequeñas */
+    }
+
+    .news-title {
+        font-size: 1.2rem; /* Tamaño de texto aún más pequeño para el título */
+    }
+
+    .news-description {
+        font-size: 0.9rem; /* Tamaño de texto aún más pequeño para la descripción */
+    }
+
+    .news-date {
+        font-size: 0.8rem; /* Tamaño de texto aún más pequeño para la fecha */
+    }
+
+    .countdown-timer {
+        font-size: 1rem; /* Tamaño de texto aún más pequeño para el contador */
+    }
 }
 /* Encabezado (Navbar) */
 .navbar {
@@ -394,7 +473,7 @@ footer {
 
 /* Estilos para el formulario de contacto */
 .contact-form {
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #cde3ef; /* Fondo blanco */
     padding: 20px; /* Espaciado interno */
     border-radius: 0.5rem; /* Bordes redondeados */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */

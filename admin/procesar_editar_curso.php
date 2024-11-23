@@ -26,12 +26,7 @@ if (isset($_FILES['imagen']) && $_FILES['imagen']['error'] == UPLOAD_ERR_OK) {
 $sql = "UPDATE cursos SET titulo='$titulo', descripcion='$descripcion', imagen='$imagen' WHERE id=$id";
 
 if ($conn->query($sql) === TRUE) {
-    echo '<div class="container mt-5">';
-                echo '<h2>Curso editado exitosamente.</h2>';
-                echo '<a href="./admin.php" class="btn btn-primary">Volver al Panel</a>';
-                echo "<br>";
-                echo '<a href="./agregar_curso.php" class="btn btn-secondary">Cargar Otro Curso</a>';
-                echo '</div>';
+    header("Location: ./admin.php");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
