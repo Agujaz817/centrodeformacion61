@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-require_once '../db.php'; // Asegúrate de que la ruta sea correcta
+require_once '../db.php'; 
 
 // Crear una instancia de la clase Database y obtener la conexión
 $db = new Database();
@@ -32,12 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Guardar la información del curso en la base de datos
             $sql = "INSERT INTO cursos (titulo, descripcion, imagen) VALUES ('$titulo', '$descripcion', '$newFileName')";
             if ($conn->query($sql) === TRUE) {
-                echo '<div class="container mt-5">';
-                echo '<h2>Curso cargado exitosamente.</h2>';
-                echo '<a href="./admin.php" class="btn btn-primary">Volver al Panel</a>';
-                echo "<br>";
-                echo '<a href="./agregar_curso.php" class="btn btn-secondary">Agregar otro curso</a>';
-                echo '</div>';
+                header("Location: ./admin.php");
             } else {
                 echo "Error al agregar el curso: " . $conn->error;
             }

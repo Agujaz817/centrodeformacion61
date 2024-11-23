@@ -35,6 +35,7 @@ if (!$result) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./IMG/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -44,12 +45,12 @@ if (!$result) {
     <header>
     
     <?php if ($evento): ?>
-    <div class="alert alert-info text-center" id="evento">
-        <h4 ><strong><?php echo htmlspecialchars($evento['titulo']); ?></strong></h4>
-        <p><?php echo htmlspecialchars($evento['descripcion']); ?></p>
-        <p>Fecha y Hora: <?php echo htmlspecialchars($evento['fecha_hora']); ?></p>
-        <div id="contador"></div>
-    </div>
+        <div class="alert alert-info text-center news-section" id="evento">
+    <h2 class="news-title"><strong><?php echo htmlspecialchars($evento['titulo']); ?></strong></h2>
+    <p class="news-description"><?php echo htmlspecialchars($evento['descripcion']); ?></p>
+    <p class="news-date">Fecha y Hora: <span class="date-time"><?php echo htmlspecialchars($evento['fecha_hora']); ?></span></p>
+    <div id="contador" class="countdown-timer"></div>
+</div>
 <?php endif; 
 ?>
 <nav class="navbar navbar-light">
@@ -90,10 +91,10 @@ if (!$result) {
             <?php endif; ?>
         </ul>
         <div class="social-icons">
-        <a href="https://www.instagram.com" target="_blank" style="color:  #152372; ">
+        <a href="https://www.instagram.com/cfp61lacriolla?igsh=MW5hemlyNmpiNzRzcA==" target="_blank" style="color:  #152372; ">
             <i class="bi bi-instagram" style="font-size: 30px;"></i>
         </a>
-        <a href="https://www.facebook.com" target="_blank" style="color:  #152372;">
+        <a href="https://www.facebook.com/share/15S7oEsPhe/?mibextid=LQQJ4d" target="_blank" style="color:  #152372;">
             <i class="bi bi-facebook" style="font-size: 30px;"></i>
         </a>
         <p style=" position: relative; top: 10px;  " ><strong>¡Seguinos para enterarte de todo! </strong></p>
