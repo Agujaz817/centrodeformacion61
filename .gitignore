@@ -1,5 +1,4 @@
 # Ignorar el archivo de configuración de la base de datos
-db.php
 
 # Ignorar archivos de configuración de entorno
 env
